@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lohit+Punjabi&display=swap">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Lohit Punjabi', 'GurbaniAkhar', 'AnmolUni', 'Noto Sans Gurmukhi', 'Roboto', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #fff;
+            background: linear-gradient(to bottom, #001f3f, #FFD700);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 992px) {
+            body {
+                padding-top: 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #001f3f; /* Navy Blue */
+        }
+
+        nav a {
+            color: #FFD700 !important; /* Gold/Yellow */
+        }
+
+        /* Center the content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            flex-grow: 1; /* Allows the content to grow and take remaining height */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* Contact Form Styles */
+        form {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        label {
+            color: #FFD700; /* Gold/Yellow */
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #FFD700; /* Gold/Yellow */
+            color: #001f3f; /* Navy Blue */
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #001f3f; /* Navy Blue */
+            color: #FFD700; /* Gold/Yellow */
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            flex-shrink: 0; /* Prevents the footer from shrinking */
+        }
+    </style>
+    <title>Dera Sant Phool Nath Ji - Contact Us</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Dera Sant Phool Nath Ji</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content for Contact Us -->
+    <div class="container">
+        <h1>Contact Dera Sant Phool Nath Ji</h1>
+        <p>Feel free to reach out to us with any questions, concerns, or feedback. We value your connection and are
+            here to assist you.</p>
+
+        <!-- Contact Form -->
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        &copy; 2024 Dera Sant Phool Nath Ji. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and jQuery (Make sure to include these at the end of the body) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
