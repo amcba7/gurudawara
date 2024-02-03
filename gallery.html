@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lohit+Punjabi&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <style>
         /* Custom Styles */
         body {
@@ -168,8 +169,17 @@
             <div class="row">
                 <div class="col-md-4">
                     <!-- Tile 1 content goes here -->
-                    <div class="category-tile">
+                    <div class="category-tile" data-fancybox="gallery5"
+                    data-src="projectImages/company/phpRunner/1.png">
                         Category 1
+                    </div>
+                    <!-- Hidden container for Fancybox images -->
+                    <div style="display: none;">
+                        <div id="project3Images">
+                            <a href="projectImages/company/phpRunner/2.png" data-fancybox="gallery5"></a>
+                            <a href="projectImages/company/phpRunner/3.png" data-fancybox="gallery5"></a>
+                            <a href="projectImages/company/phpRunner/4.png" data-fancybox="gallery5"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -215,6 +225,9 @@
     </footer>
 
     <!-- Bootstrap JS and jQuery (Make sure to include these at the end of the body) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
